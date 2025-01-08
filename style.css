@@ -1,0 +1,110 @@
+/* General Footer Styling */
+.footer {
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #f0f0f0;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+.social-links li a {
+    color: white;
+}
+
+.footer-bottom {
+    background-color: #222;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-extra {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-link a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-payment-methods {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.payment-methods-image {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer-extra {
+        flex-direction: column;
+        align-items: center;
+    }
+}
