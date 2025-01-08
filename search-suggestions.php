@@ -1,15 +1,5 @@
 <?php
-// Example code for search-suggestions.php
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "users"; //  database name
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+include 'partials/dbconnect.php';
 
 $query = isset($_GET['query']) ? $_GET['query'] : '';
 $sql = "SELECT id, name, description, price, image FROM products WHERE name LIKE ? LIMIT 2"; // Fetch the product image as well

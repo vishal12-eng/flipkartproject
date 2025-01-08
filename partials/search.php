@@ -1,18 +1,5 @@
 <?php
-// search.php
-
-// Include database connection (update with your credentials)
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "users"; //  database name
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
+include'dbconnect.php';
 $searchQuery = isset($_GET['query']) ? $_GET['query'] : ''; // Get search query
 
 // Query to fetch products based on search query

@@ -1,0 +1,25 @@
+    
+
+    /* Style for the search result dropdown */
+    #search-results {
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
+        max-height: 300px;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        background-color: white;
+        z-index: 999;
+    }
+
+    .search-result-item {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        cursor: pointer;
+    }
+
+    .search-result-item:hover {
+        background-color: #f0f0f0;
+    }

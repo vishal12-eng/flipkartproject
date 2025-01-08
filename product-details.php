@@ -1,18 +1,7 @@
 <?php
 session_start();  // Start the session
 
-// Include database connection
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "users"; // Your database name
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
+include'partials/dbconnect.php';
 // Get the product ID from the URL
 $productId = isset($_GET['id']) ? $_GET['id'] : '';
 

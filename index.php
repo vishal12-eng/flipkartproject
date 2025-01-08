@@ -7,33 +7,9 @@
 
     <!-- Bootstrap CSS link for styling -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    
-    <style>
-        /* Style for the search result dropdown */
-        #search-results {
-            position: absolute;
-            top: 50px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 300px;
-            max-height: 300px;
-            overflow-y: auto;
-            border: 1px solid #ccc;
-            background-color: white;
-            z-index: 999;
-        }
 
-        .search-result-item {
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-            cursor: pointer;
-        }
-
-        .search-result-item:hover {
-            background-color: #f0f0f0;
-        }
-    </style>
-    <link rel="stylesheet" href="styles.css"> <!-- Link your styles -->
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="styles5.css"> 
 </head>
 <body>
 
@@ -104,7 +80,7 @@
     <?php
     include 'terms.php';
     include 'footer.php';
-    include 'content.php';
+   
     ?>
 </body>
 </html>

@@ -10,74 +10,8 @@ $totalAmount = isset($_SESSION['totalAmount']) ? $_SESSION['totalAmount'] : 0; /
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Success</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f8f9fa;
-            font-family: 'Arial', sans-serif;
-            color: #343a40;
-        }
 
-        .container {
-            max-width: 600px;
-            padding-top: 100px;
-        }
-
-        .order-success-card {
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .order-success-card h1 {
-            color: #28a745;
-            font-size: 36px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .order-success-card p {
-            font-size: 18px;
-            line-height: 1.5;
-            margin-bottom: 30px;
-        }
-
-        .btn-custom {
-            background-color: #28a745;
-            color: white;
-            border-radius: 5px;
-            padding: 12px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            text-align: center;
-            width: 100%;
-            border: none;
-        }
-
-        .btn-custom:hover {
-            background-color: #218838;
-        }
-
-        .order-success-card .fa-check-circle {
-            font-size: 50px;
-            color: #28a745;
-            margin-bottom: 20px;
-        }
-
-        .back-to-home {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        /* Add spacing between the buttons */
-        .order-success-card .button-group {
-            margin-top: 20px;
-        }
-
-        .button-group .btn-custom {
-            margin-bottom: 10px; /* Add space below the PayPal button */
-        }
-    </style>
+    <link rel="stylesheet" href="styles3.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>

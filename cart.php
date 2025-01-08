@@ -21,7 +21,7 @@ if (isset($_GET['remove_id'])) {
     exit;
 }
 ?>
-
+<link rel="stylesheet" href="styles2.css"> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,73 +29,7 @@ if (isset($_GET['remove_id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Shopping Cart</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Custom Styles for Cart */
-        .cart-item {
-            border: 1px solid #ddd;
-            padding: 10px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .cart-item img {
-            max-width: 100px;
-            max-height: 100px;
-            object-fit: cover;
-        }
-        .cart-item h5 {
-            font-size: 18px;
-            margin-bottom: 5px;
-        }
-        .cart-item .product-price {
-            font-size: 16px;
-            font-weight: bold;
-            color: #333;
-        }
-        .cart-item .product-quantity {
-            width: 60px;
-        }
-        .cart-total {
-            font-size: 20px;
-            font-weight: bold;
-            text-align: right;
-            margin-top: 20px;
-        }
-        .cart-actions {
-            margin-top: 30px;
-            text-align: center;
-        }
-        .btn-custom {
-            background-color: #28a745;
-            color: white;
-        }
-        .btn-custom:hover {
-            background-color: #218838;
-        }
-        .no-image {
-            display: inline-block;
-            width: 100px;
-            height: 100px;
-            background-color: #f0f0f0;
-            color: #888;
-            text-align: center;
-            line-height: 100px;
-            font-size: 14px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
-        .btn-remove {
-            background-color: #dc3545;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            font-size: 14px;
-            cursor: pointer;
-        }
-        .btn-remove:hover {
-            background-color: #c82333;
-        }
-    </style>
+    
 </head>
 <body>
 

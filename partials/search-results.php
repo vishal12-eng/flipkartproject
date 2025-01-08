@@ -1,37 +1,4 @@
-<?php
-// search-results.php
-include 'header.php';
 
-// Database connection
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "users"; // Your database name
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-// Get the search query from the URL
-$searchQuery = isset($_GET['query']) ? $_GET['query'] : '';
-
-// Fetch products based on the search query
-$sql = "SELECT * FROM products WHERE name LIKE ?";
-$stmt = $conn->prepare($sql);
-$searchTerm = "%" . $searchQuery . "%"; // Add wildcard for LIKE
-$stmt->bind_param("s", $searchTerm);
-$stmt->execute();
-$result = $stmt->get_result();
-
-$products = [];
-while ($row = $result->fetch_assoc()) {
-    $products[] = $row;
-}
-
-$conn->close();
-?>
 
 <!DOCTYPE html>
 <html lang="en">
